@@ -1,8 +1,60 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
+/*----------- Special settings */
 body {
     background-color: rgb(189, 157, 132);
     font-family: "Roboto", Sans-serif;
     color: rgb(60, 63, 54); 
+}
+
+i.fa.fa-copyright {
+    color: rgb(60, 63, 54);
+}
+
+/* -------- Carousel styling ----*/
+
+div.carousel.slide {
+    margin: 0.3%;
+    border: 1px solid rgb(60, 63, 54);
+    border-radius: 5px;
+    height: 30%;
+
+}
+
+.carousel-caption {
+    margin-bottom: 40%;
+}
+
+.carousel-inner {
+    border-radius: 5px; 
+}
+
+/*---------- Index page */
+
+h1.header-settings {
+    text-align: center;
+    background-color: rgb(60, 63, 54);
+    color: rgb(189, 157, 132);
+    height: 75px;
+    padding-top: 1%;
+}
+
+/*------------------ Footer ----- */ 
+
+h2.panel-title {
+    text-align: center;
+    background-color: rgb(60, 63, 54);
+    color: rgb(189, 157, 132);
+    height: 75px;
+    padding-top: 1.5%;
+}
+
+div.col-sm-12.col-md-6 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
