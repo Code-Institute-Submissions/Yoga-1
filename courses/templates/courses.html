@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+	<div class="col-12">
+		<div class="row row-flex">
+            {% for course in courses %}
+				<div class="col-sm-12 col-lg-4">
+					<div class="card">
+						<div class="course" style="background-image: url('{{ MEDIA_URL }}{{ course.image }}')"></div>
+						<div class="card-body">
+							<h5 class="card-title">{{ course.name }}</h5>
+							<p>{{ course.duration }}</p>
+                            <p>{{ course.coursedate }}</p>
+                            <p>{{ course.coursetime }}</p>
+                            <p class="product-description">{{ course.description }}</p>
+                            <p>{{ course.price }}</p>
+                            <a href="ash-vin.html" class="form-text text-muted">Les Mer</a>
+							<form method="post" action="#">
+                                {% csrf_token %}
+                                    <div class="input-group">
+                                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Antall">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-success" type="submit">Bestille</button>
+                                        </span>
+                                    </div>
+                            </form>
+						</div>
+					</div>
+				</div>
+            {% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}
