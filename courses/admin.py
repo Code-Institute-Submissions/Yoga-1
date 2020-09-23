@@ -3,5 +3,17 @@ from .models import Course
 
 
 # Register your models here.
-admin.site.register(Course)
+class CourseAdmin(admin.ModelAdmin):
+    list_display = (
+        'sku',
+        'name',
+        'coursedate',
+        'price',
+        'rating',
+    )
+
+    ordering = ('sku',)
+
+
+admin.site.register(Course, CourseAdmin)
 
