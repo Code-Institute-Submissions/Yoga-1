@@ -9,7 +9,9 @@
             {% for course in courses %}
 				<div class="col-sm-12 col-lg-4">
 					<div class="card">
-						<div class="course" style="background-image: url('{{ MEDIA_URL }}{{ course.image }}')"></div>
+                        {% if course.image %}
+						    <img class="card-img-top img-fluid" src="{{ course.image.url }}" alt="{{ course.name }}">
+                        {% endif %}
 						<div class="card-body">
 							<h5 class="card-title">{{ course.name }}</h5>
 							<p>{{ course.duration }}</p>
