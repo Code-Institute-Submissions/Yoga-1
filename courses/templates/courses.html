@@ -11,6 +11,8 @@
 					<div class="card">
                         {% if course.image %}
 						    <img class="card-img-top img-fluid" src="{{ course.image.url }}" alt="{{ course.name }}">
+                        {% else %}
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ course.name }}">
                         {% endif %}
 						<div class="card-body">
 							<h5 class="card-title">{{ course.name }}</h5>
@@ -20,14 +22,17 @@
                             <p class="product-description">{{ course.description }}</p>
                             <p>{{ course.price }}</p>
                             <a href="ash-vin.html" class="form-text text-muted">Les Mer</a>
-							<form method="post" action="#">
+							<form method="post" action="{% url 'add_to_bag' course.id %}">
                                 {% csrf_token %}
                                     <div class="input-group">
-                                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Antall">
+                                        <input name="quantity" type="number" value="1" min="1" max="99" 
+                                         class="form-control qty_input" data-item_id="{{ course.id }}"
+                                         id="id_qty_{{ course.id }}" placeholder="Antall">
                                         <span class="input-group-btn">
                                             <button class="btn btn-success" type="submit">Bestille</button>
                                         </span>
                                     </div>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </form>
 						</div>
 					</div>
