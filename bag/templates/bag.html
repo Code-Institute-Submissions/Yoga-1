@@ -17,7 +17,19 @@
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
-                        {{ bag_items }}
+                    {{ bag_items }}
+                        <thead>
+                            <tr>
+                                <th scope="col">Course Info</th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">subtotal</th>
+                                
+
+                            </tr>
+                        </thead>
+                        
                     </div>
                 {% else %}
                     <p class="lead mb-5">Handlevogn er tom</p>
