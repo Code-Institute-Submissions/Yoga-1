@@ -58,3 +58,17 @@ div.col-sm-12.col-md-6 {
     padding-top: 5%;
     padding-bottom: 5%;
 }
+
+/*------------ Icon Styling --*/
+
+i.fas.fa-plus-circle,
+i.fas.fa-minus-circle {
+    color: rgb(60, 63, 54);
+}
+
+/*---------- Button styling --*/
+
+.btn-color {
+    background-color: rgb(60, 63, 54);
+    color: white;
+}
