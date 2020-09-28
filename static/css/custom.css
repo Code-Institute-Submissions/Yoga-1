@@ -72,3 +72,20 @@ i.fas.fa-minus-circle {
     background-color: rgb(60, 63, 54);
     color: white;
 }
+
+/*------------ Django messages ----*/
+
+.message-container {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 3px;
+}
