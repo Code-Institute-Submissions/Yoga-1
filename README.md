@@ -1,9 +1,21 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<img src="https://i.imgur.com/BEAE1lf.png" style="margin: 0;">
 
-Welcome weekend79,
+# Milestone 4 - SpiritusYoga.no
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## Description
+---
 
+This is my 4th. and final Milestone in the Full Stack Software developer course With Code Institue.
+In our final project we will show the skills that we've learn through out the course and the project
+needs to be a fullstack project. We got different scopes to choose from and I have chosen a project 
+that I've made for a friend after I had finished my MS1. The project only consists of HTML and CSS, but 
+I will upgrade the project to a Full Stack Project and allow the customers to create an account and
+make purchase directly inside the webpage. The language for the site is Norwegian. 
+
+The project is a Yoga site for a friend that have a small Yogastudio where people can come and teach about 
+Yoga and practice yoga. She is a certified Yoga instructor and offering three different kinds of sessions. 
+The site will offer basic information about the 
+  
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
