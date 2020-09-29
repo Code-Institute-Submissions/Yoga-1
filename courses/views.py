@@ -6,4 +6,3 @@ from .models import Course
 def all_courses(request):
     courses = Course.objects.all()
     return render(request, "courses.html", {"courses": courses})
-
