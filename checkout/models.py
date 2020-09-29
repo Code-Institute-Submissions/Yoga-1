@@ -16,15 +16,15 @@ class Order(models.Model):
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     street_address1 = models.CharField(max_length=254, blank=True)
     street_address2 = models.CharField(max_length=254, blank=True)
-    Town_or_city = models.CharField(max_length=254, blank=True)
+    town_or_city = models.CharField(max_length=254, blank=True)
     postcode = models.CharField(max_length=10, blank=True)
     county = models.CharField(max_length=254, blank=True)
     country = models.CharField(max_length=254, blank=True)
     date = models.DateTimeField(auto_now_add=True)
-    order_cost = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
 
-    def _generate_orde_number(self):
+    def _generate_order_number(self):
         """
         Generate a random, unique order number using UUID
         """
