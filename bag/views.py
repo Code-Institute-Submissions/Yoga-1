@@ -67,4 +67,3 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error i forsøket på å fjerne produktet')
         return HttpResponse(status=500)
-
