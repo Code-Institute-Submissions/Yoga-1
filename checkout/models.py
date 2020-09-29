@@ -58,13 +58,12 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
     def save(self, *args, **kwargs):
-            """
-            Override the original save method to set the order number
-            if it hasn't been set
-            """
-            self.lineitem_total = self.course.price * self.quantity
-            super().save(*args, **kwargs)
+        """
+        Override the original save method to set the order number
+        if it hasn't been set
+        """
+        self.lineitem_total = self.course.price * self.quantity
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
-
