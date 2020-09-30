@@ -41,7 +41,7 @@ def adjust_bag(request, item_id):
         messages.success(request, f'{course.name} har blitt oppdatert')
     else:
         bag.pop(item_id)
-        messages.success(request, f'{course.name} har blitt fjernet fra din kurv')
+        messages.success(request, f'{course.name} har blitt fjernet')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
