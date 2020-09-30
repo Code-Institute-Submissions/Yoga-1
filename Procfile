@@ -1,1 +1,1 @@
-web: gunicorn spiritusyoga.wsgi.application
+web: gunicorn spiritusyoga.wsgi:application

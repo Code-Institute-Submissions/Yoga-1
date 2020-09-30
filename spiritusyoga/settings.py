@@ -27,7 +27,8 @@ SECRET_KEY = os.environ.get('YOGA_SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['localhost',
-                 'weekend79-spiritusyoga.herokuapp.com']
+                 '127.0.0.1',
+                 'spiritusyoga.herokuapp.com']
 
 
 # Application definition
