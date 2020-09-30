@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get('YOGA_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost',
+                 'weekend79-spiritusyoga.herokuapp.com']
 
 
 # Application definition
