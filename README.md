@@ -5,47 +5,143 @@
 ## Description
 ---
 
-This is my 4th. and final Milestone in the Full Stack Software developer course With Code Institue.
-In our final project we will show the skills that we've learn through out the course and the project
-needs to be a fullstack project. We got different scopes to choose from and I have chosen a project 
-that I've made for a friend after I had finished my MS1. The project only consists of HTML and CSS, but 
-I will upgrade the project to a Full Stack Project and allow the customers to create an account and
-make purchase directly inside the webpage. The language for the site is Norwegian. 
+This is my 4th. and final Milestone in the Full Stack Software developer course With Code Institute.
+In our final project we going to show the skills we've learn during the course and the project
+needed to be a full stack project, we got different scopes to choose from and I have chosen a project 
+that I've made for a friend after I had finished my MS1, which only contained HTML and CSS. 
 
-The project is a Yoga site for a friend that have a small Yogastudio where people can come and teach about 
-Yoga and practice yoga. She is a certified Yoga instructor and offering three different kinds of sessions. 
-The site will offer basic information about the 
-  
-## Gitpod Reminders
+The project is for a small Yoga studio where people can come and teach about Yoga and to practice Yoga,
+She is a certified Yoga instructor and offers three different kinds of sessions. The site will offer
+basic information about the courses she offers, as well as the possibility to create an 
+account, login, add courses to the basket and go to checkout to pay for the courses.  
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Since I've not been able to finish up my project there is a lot of things missing and there is no styling for
+the project. So things like userprofile, order history missing and more.
 
-`python3 -m http.server`
+## UX
+My goal was to create an upgrade of my earlier design and to add more features and value to the site. 
+(Click the link to see: https://weekend79.github.io/spiritusyogamarie/index.html)
+The website consists of home, products/courses, account and shopping bag with a functional checkout, where 
+Stripe has been integrated for Visa and Mastercard payments. You will also get a receipt with a confirmation
+to your email which is only available to see in the terminal. 
 
-A blue button should appear to click: *Make Public*,
+There are some toasts in the project together with webhooks with the Stripe payment.  
 
-Another blue button should appear to click: *Open Browser*.
+For the owner of the site the goal is to sell Yoga classes directly in her website and to promote and inform 
+possible clients what Yoga is about and when there are new classes available.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The Site can be found here: https://spiritusyoga.herokuapp.com/
 
-A blue button should appear to click: *Make Public*,
+## User Stories
+As a customer I would like:
 
-Another blue button should appear to click: *Open Browser*.
+* View/Read about Courses / Classes (product)
+* See a specific course and read about it
+* See the details of a particular courses
+* See the total of my shopping bag
+* Easy access to my shopping bag
+* Choose quantity
+* See my order history
+* See my profile
+* Edit my profile
+* Make a purchase
+* Contact admin
+* Read about the person(s) behind the site
+* Receive an email with the order confirmation after completing the checkout.
+* View my order confirmation after completing the checkout.
+* Register
+* Sign in
+* Sign out 
+* Edit password
+* Ask for my password recovery
+* Received an email about my purchase
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+As a site owner I would like:
+* Add a new course
+* Delete course
+* Edit a course
+* See my contacts from the form
+* See my clients
+* Change admin password
+* Change admin e-mail
+* See order details
+* Order History
 
-## Updates Since The Instructional Video
+## Features
+* User Authentication
+* Login User and admin
+* Shopping bag: add courses, update quantity (Not possible to delete)
+* Checkout with Stripe payment
+* Admin site manager
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Missing Features
+* Add contact form
+* Add user profile
+* Add order History
+* Expand the sign up with sosial accounts
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Technologies 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+I have use the following technologies:
+* HTML
+* CSS
+* Bootstrap4: Framework for my responsive design 
+* GoogleFont: For my Roboto font family
+* FontAwesome: For Icons
+* JQuery: For manipulating the DOM
+* JavaScript: For activating the carousel, and for Stripe
+* Python3: main programming language
+* Django3: As the full stack Framework
+* Pip3: To install side packages
+* Stripe: As payment
+* Pillow: Python image library
+* GitHub: For version control of my code
+* AWS: Using S3 to store my static and media fils.
+* Imgur: For some static files
+* Heroku: Where my app is deployed and 
+          I using Heroku Postgres Database
+* SqLite3: As a backup database if my main database 
+           Connection fails.
 
---------
+## Testing
 
-Happy coding!
+Only manual testing have been done and there is no automated tests been used during the
+development. The main issues that have been found during manually testing is:
+
+* Not possible to delete items from shopping bag
+* Not possible to verify a new account when signing up, only from terminal or Heroku. 
+(So to login use these credentials:
+User: Happy
+Pass: Good1234
+  )
+
+
+## Code Validation
+
+There haven't been done any code Validation
+
+## Deployment 
+    - Live demo: https://spiritusyoga.herokuapp.com/
+    - GitHub repo: https://github.com/weekend79/Yoga
+
+## Credits
+The project is inspired by my friend
+
+## Code 
+I have follow the LMS example Boutique Ado and refactored the code where needed, to find ways 
+to have my own features.
+
+## Content / Media 
+    - The images and logo are SpiritusYogaMarie's ownership and I have been given the permission to use it 
+      for my MS4
+
+
+## Special Thanks
+I would like to give a special thanks to Code Institute for this amazing journey! To the tutors and to my mentor 
+Reuben Ferrante for all the help and support thrugh out the course. 
+
+## Disclaimer
+
+This project is for educational purposes only.
